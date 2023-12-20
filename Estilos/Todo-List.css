@@ -11,7 +11,8 @@ body {
   width: 100vw;
   height: 100vh;
   /*background-image: linear-gradient(#67E3CB, #59B7D7, #4E90E4);*/
-  background-image: linear-gradient(165deg, #022162 40%, #380E60, #4A085F);
+  background-image: url(../Imagens/background-landscape.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,7 +23,8 @@ div.todo {
   display: block;
   background-color: whitesmoke;
   width: 50%;
-  margin: 20px auto;
+  height: auto;
+  margin: 1% auto;
   border-radius: 5px;
   
 }
@@ -119,6 +121,13 @@ input[type="text"] {
 
 input:focus::-webkit-input-placeholder {
   color: transparent;
+}
+
+@media (orientation: portrait) {
+  body {
+    background-image: url(../Imagens/background-portrait.jpg);
+  }
+  
 }
 
 @media (max-width: 991px) {
