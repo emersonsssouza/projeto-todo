@@ -10,12 +10,9 @@
 body {
   width: 100vw;
   height: 100vh;
-  /*background-image: linear-gradient(#67E3CB, #59B7D7, #4E90E4);*/
   background-image: url(../Imagens/background-landscape.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   overflow-x: hidden;
 }
 
@@ -24,9 +21,8 @@ div.todo {
   background-color: whitesmoke;
   width: 50%;
   height: auto;
-  margin: 20% auto;
-  border-radius: 5px;
-  
+  margin: 0% auto;
+  border-radius: 5px; 
 }
 
 div.todo__title {
@@ -125,9 +121,14 @@ input:focus::-webkit-input-placeholder {
 
 @media (orientation: portrait) {
   body {
-    background-image: url(../Imagens/background-portrait.jpg);
-  }
-  
+    background-image: url(../Imagens/portrait.jpg);
+  } 
+}
+
+@media (orientation: landscape) {
+  body {
+    background-image: url(../Imagens/landscape.jpg);
+  } 
 }
 
 @media (max-width: 991px) {
